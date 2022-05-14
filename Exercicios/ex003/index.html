@@ -17,9 +17,13 @@
     <h1>Olá, Mundo!</h1>
     <p>Ja me livrei da maldição</p>
     <script>
-        window.alert('Meu primeiro codigo em JavaScript, estou fazendo programa')
-        window.confirm('está gostando de java?')
-        window.prompt('Qual é o seu nome ?')
+        /*aqui a variavel n1 e n2 vão receber os dados do "window.prompt"*/
+       var n1/*n1 = numero1*/= Number(window.prompt('Digite um número: ')) //prompt recebe valor string
+       var n2/*n2 = numero2*/= Number(window.prompt('Digite outro número: ')) 
+       var s /*s = soma*/ = n1 + n2
+       window.alert(`A soma de ${n1} e ${n2} é igual a: ${s}`)
+       //quando for usar a "${}" abre e fecha com crase. "  ``   "
+        
     </script>
 </body>
 </html>

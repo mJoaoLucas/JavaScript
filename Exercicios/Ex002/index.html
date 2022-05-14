@@ -17,9 +17,13 @@
     <h1>Olá, Mundo!</h1>
     <p>Ja me livrei da maldição</p>
     <script>
-        window.alert('Meu primeiro codigo em JavaScript, estou fazendo programa')
-        window.confirm('está gostando de java?')
-        window.prompt('Qual é o seu nome ?')
+        // na linha abaixo a variavel "nome" está recebendo a resposta do "window.prompt".
+
+       var nome = window.prompt('Qual é o seu nome ?') //vai perguntar o nome da pessoa
+       window.alert('é um prazer te conhecer, ' + nome + '!')
+
+
+       // o " + " significa concatenação, vai juntar uma coisa a outra, no caso do comando, vai juntar o resultado da variavel a frase "é um prazer te conhecer, "
     </script>
 </body>
 </html>
