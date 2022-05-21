@@ -7,25 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Nacionalidade</h1>
-    
-    de que país você é ? <input type="text" name="txtp" id="txtp">
-    <input type="button" value="Analise" onclick="paiz()">
+    <h1>Nacionalidades</h1>
+
+    em qual país você mora ? <input type="text" name="ct" id="ct"> 
+
+    <input type="button" value="Verificar" onclick="verificando()">
     <div id="res">
 
     </div>
     <script>
-        function paiz() {
-    var pais = document.getElementById('textp')
-    var res = document.getElementById('res')
-
-    if (pais == brasil) {
-        res.innerHTML = ` você é Brasileiro!`
-    } else {
-        res.document.write('Você é estrangeiro!')
-    }
-}
+        function verificando() {
+            var pais = window.document.getElementById('ct')
+            var res = window.document.getElementById('res')
+            var p = pais.value
+            
+            if (pais.value == 'brasil') {
+                res.innerHTML = `Morando no ${p}, você é <strong>Brasileiro</strong>!`
+            } else {
+                res.innerHTML = `Morando no ${p}, você é <strong>Estrangeiro</strong>!`
+            }
+        }
     </script>
-    
+
+
+
 </body>
 </html>
