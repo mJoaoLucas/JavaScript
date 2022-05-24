@@ -17,16 +17,22 @@
     </div>
     <script>
         function verificando() {
-            var pais = window.document.getElementById('ct')
-            var res = window.document.getElementById('res')
-            var p = pais.value
-            
-            if (pais.value == 'brasil', 'Brasil') {
-                res.innerHTML = `Morando no ${p}, você é <strong>Brasileiro</strong>!`
-            } else {
-                res.innerHTML = `Morando no ${p}, você é <strong>Estrangeiro</strong>!`
-            }
+        var pais = document.getElementById('ct')
+        var res = document.getElementById('res')
+        var p = String(pais.value)
+
+        res.innerHTML = `Seu país é ${pais.value} <br>` 
+
+        if (pais.value == 'brasil, Brasil') {
+            res.innerText += `você é Brasileiro!`
+        } else { 
+            res.innerText += `você é Estrangeiro!`
         }
+    }
+
+
+
+ 
     </script>
 
 
