@@ -4,12 +4,12 @@ function verificar() {
     var fano = document.getElementById('txtano') //fano == parte correta do código
     var Fano = document.getElementById('txtano') //Fano == else if da linha 10
     var res = document.getElementById('res')
-    var anciao = Number(1900)
+    var anciao = 1900
     if (fano.value.length == 0 || Number(fano.value) > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente.')
-    } else if (fano.value.length < anciao){
+    } else if (Fano.value < anciao){
         var Idade = ano - Number(Fano.value)
-        window.alert(`Impossivel você ter essa idade, a pessoa mais velha do mundo chegou a ter 122 anos, haha! ( no acaso, você teria ${Idade} ).`)
+        window.alert(`Impossivel você ter essa idade, a pessoa mais velha do mundo chegou a ter 122 anos, haha! ( no acaso, você teria ${Idade} anos).`)
         
     }  else {
         var fsex =  document.getElementsByName('radsex')
