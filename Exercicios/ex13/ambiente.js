@@ -1,5 +1,5 @@
 var c = 1
 
-while (c < 6) {
-    console.log(`passo 5`)
+while (c < 2) {
+    console.log('oi')
 }
