@@ -3,6 +3,7 @@ function carregar() {
     var img = document.getElementById('imagem')
     var date = new Date()
     var hours = date.getHours()
+   
 
   
 
