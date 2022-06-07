@@ -10,4 +10,3 @@ if (hora >= 5 || hora < 12) {
 } else if (hora <= 23 ) {
     console.log('Boa Noite!')
 } 
-
