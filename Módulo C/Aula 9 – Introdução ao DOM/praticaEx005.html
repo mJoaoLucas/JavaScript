@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste em <div id="redcolor">javaScript</div></h1>
+    <p>tentando mudar isso</p>
+    <p id="frase"></p>
+    <script>
+        var til = document.getElementsByTagName('h1')[0]
+        document.write(`resultado: ${til.innerText}`)
+
+        var frase = document.getElementById('frase')
+        frase = document.write(`<br> fiz aparecer esse texto aqui`)
+
+   
+        
+        
+
+       var corpo = document.body
+        corpo.style.backgroundColor = 'black'
+        corpo.style.color = 'white'
+        corpo.style.fontFamily = 'sans-serif, arial 20pt'
+        
+        var red = document.getElementById('redcolor')
+        red.style.color = 'red'
+       
+    </script>
+</body>
+</html>
