@@ -17,9 +17,13 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()"  >interaja...</div>
+    <div id="area">interaja...</div>
     <script>
          var text = document.getElementById('area')
+         text.addEventListener('click', clicar)
+         text.addEventListener('mouseout', saiu)
+         text.addEventListener('mouseenter', entrou)
+        
         function clicar() {
             text.innerText = 'clicou'
             text.style.backgroundColor = 'red'
